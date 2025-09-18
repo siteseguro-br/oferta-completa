@@ -30,19 +30,10 @@
     .feat span{font-size:14px}
 
     /* Blocos coloridos */
-    .feat.mega {
-      background: linear-gradient(135deg, #16a34a, #22c55e);
-    }
-    .feat.quina {
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-    }
-    .feat.lotomania {
-      background: linear-gradient(135deg, #f59e0b, #fbbf24);
-      color:#1e293b;
-    }
-    .feat.dupla {
-      background: linear-gradient(135deg, #db2777, #ec4899);
-    }
+    .feat.mega {background: linear-gradient(135deg, #16a34a, #22c55e);}
+    .feat.quina {background: linear-gradient(135deg, #2563eb, #3b82f6);}
+    .feat.lotomania {background: linear-gradient(135deg, #f59e0b, #fbbf24);color:#1e293b;}
+    .feat.dupla {background: linear-gradient(135deg, #db2777, #ec4899);}
 
     .bonus{margin-top:20px;padding:16px;border-radius:12px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.5);transition:transform .2s, box-shadow .2s}
     .bonus:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 12px 28px rgba(0,0,0,0.6)}
@@ -74,6 +65,17 @@
     .why{margin-top:18px;padding:14px;background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-radius:12px}
 
     footer{margin-top:28px;color:var(--muted);font-size:14px}
+
+    /* Depoimentos */
+    #depoimento {
+      padding:16px;
+      background:rgba(255,255,255,0.05);
+      border-radius:12px;
+      font-size:15px;
+      line-height:1.6;
+      box-shadow:0 4px 14px rgba(0,0,0,0.4);
+      text-align:center;
+    }
 
     /* Responsive */
     @media (max-width:900px){
@@ -180,6 +182,14 @@
         <a href="https://wa.me/5511959930087?text=Ola%2C%20quero%20adiquerir%20o%20plano%20completo%20da%20IA." class="ghost">Tenho uma dúvida — falar com suporte</a>
       </div>
 
+      <!-- Depoimentos -->
+      <section style="margin-top:30px">
+        <h3 style="margin-bottom:12px">Depoimentos de clientes</h3>
+        <div id="depoimento">
+          <strong id="nome">Carlos M.</strong> — <span id="comentario">Aplicativo muito bom, fácil de usar e bem completo.</span>
+        </div>
+      </section>
+
     </main>
 
     <footer>
@@ -189,5 +199,32 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    const nomes = [
+      "Carlos M.", "Fernanda S.", "João P.", "Mariana L.", 
+      "Ricardo T.", "Ana C.", "Felipe R.", "Patrícia G.",
+      "Bruno K.", "Juliana A.", "Thiago V.", "Larissa D."
+    ];
+
+    const comentarios = [
+      "Ganhei R$ 2.899 com essa IA!",
+      "Fiz 14 pontos essa semana na Lotofácil.",
+      "Aplicativo muito bom, fácil de usar e bem completo.",
+      "Os palpites do grupo são muito bons, ajudaram bastante.",
+      "Já recuperei meu investimento no primeiro mês!",
+      "Nunca tinha conseguido tantos acertos antes.",
+      "Vale muito a pena, recomendo para todos."
+    ];
+
+    function gerarDepoimento() {
+      const nome = nomes[Math.floor(Math.random() * nomes.length)];
+      const comentario = comentarios[Math.floor(Math.random() * comentarios.length)];
+      document.getElementById("nome").textContent = nome;
+      document.getElementById("comentario").textContent = comentario;
+    }
+
+    setInterval(gerarDepoimento, 5000);
+  </script>
 </body>
 </html>
