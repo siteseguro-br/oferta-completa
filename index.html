@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Upsell — LotoSorte: Pacote Completo</title>
-  <meta name="description" content="Amplie suas chances com a IA LotoSorte para Mega-Sena, Quina, Lotomania e Dupla Sena. Oferta exclusiva para clientes Lotofácil." />
+  <meta name="description" content="Amplie suas chances: LotoSorte para Mega-Sena, Quina, Lotomania e Dupla Sena. Oferta exclusiva para clientes Lotofácil." />
   <style>
     :root{ --bg:#0f1724; --card:#0b1220; --accent:#ffb86b; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03); --highlight:#1e293b; }
     *{box-sizing:border-box}
@@ -24,34 +24,28 @@
     .hero-sub{color:var(--muted);margin:0 0 18px}
 
     .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
-    .feat{padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 4px 12px rgba(0,0,0,0.4);transition:transform .2s, box-shadow .2s}
+    .feat{padding:16px;border-radius:12px;color:#fff;font-weight:500;box-shadow:0 4px 12px rgba(0,0,0,0.4);transition:transform .2s, box-shadow .2s}
     .feat:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 10px 24px rgba(0,0,0,0.6)}
     .feat b{display:block;font-size:18px;margin-bottom:6px}
-    .feat span{font-size:14px}
 
-    /* Blocos coloridos */
-    .feat.mega {background: linear-gradient(135deg, #16a34a, #22c55e);}
-    .feat.quina {background: linear-gradient(135deg, #2563eb, #3b82f6);}
-    .feat.lotomania {background: linear-gradient(135deg, #f59e0b, #fbbf24);color:#1e293b;}
-    .feat.dupla {background: linear-gradient(135deg, #db2777, #ec4899);}
+    /* cores diferentes p/ cada jogo */
+    .feat.mega{background:linear-gradient(135deg,#16a34a,#22c55e);}
+    .feat.quina{background:linear-gradient(135deg,#2563eb,#3b82f6);}
+    .feat.lotomania{background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#1e293b;}
+    .feat.dupla{background:linear-gradient(135deg,#db2777,#ec4899);}
 
     .bonus{margin-top:20px;padding:16px;border-radius:12px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.5);transition:transform .2s, box-shadow .2s}
     .bonus:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 12px 28px rgba(0,0,0,0.6)}
     .bonus h3{margin:0 0 8px;font-size:20px}
     .bonus p{margin:0;font-size:16px}
 
-    /* Bloco de preço destacado em roxo */
-    .price-box .card {
-      padding: 18px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #6d28d9, #9333ea);
-      color: #fff;
-      box-shadow: 0 6px 24px rgba(109, 40, 217, 0.6);
-    }
-    .price-box .card .old-price {color: #e9d5ff;}
-    .price-box .card .price-sub {color: #ddd6fe;}
+    /* depoimentos */
+    #depoimento{padding:16px;background:rgba(255,255,255,0.05);border-radius:12px;font-size:15px;line-height:1.6;box-shadow:0 4px 14px rgba(0,0,0,0.4)}
 
     .price-box{position:sticky;top:24px}
+    .price-box .card{padding:18px;border-radius:14px;background:linear-gradient(135deg,#6d28d9,#9333ea);color:#fff;box-shadow:0 6px 24px rgba(109,40,217,0.6);}
+    .price-box .card .old-price{color:#e9d5ff;}
+    .price-box .card .price-sub{color:#ddd6fe;}
     .price{font-size:28px;margin:0}
     .old-price{text-decoration:line-through;font-size:16px;margin-bottom:4px}
     .cta{display:inline-block;margin-top:16px;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#ff7a7a);color:#081226;font-weight:700;text-decoration:none;transition:transform .2s, box-shadow .2s}
@@ -65,17 +59,6 @@
     .why{margin-top:18px;padding:14px;background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-radius:12px}
 
     footer{margin-top:28px;color:var(--muted);font-size:14px}
-
-    /* Depoimentos */
-    #depoimento {
-      padding:16px;
-      background:rgba(255,255,255,0.05);
-      border-radius:12px;
-      font-size:15px;
-      line-height:1.6;
-      box-shadow:0 4px 14px rgba(0,0,0,0.4);
-      text-align:center;
-    }
 
     /* Responsive */
     @media (max-width:900px){
@@ -118,6 +101,14 @@
             <p>Ao desbloquear o Pacote Completo, você ganha acesso a um <strong>Grupo VIP de Palpites no WhatsApp</strong>, com dicas e combinações compartilhadas em tempo real!</p>
           </div>
 
+          <!-- depoimentos abaixo do bônus -->
+          <section style="margin-top:30px">
+            <h3 style="margin-bottom:12px">Depoimentos de clientes</h3>
+            <div id="depoimento">
+              <strong id="nome">Carlos M.</strong> — <span id="comentario">Aplicativo muito bom, fácil de usar e bem completo.</span>
+            </div>
+          </section>
+
           <div class="why">
             <h3 style="margin:0 0 8px">Por que vale a pena?</h3>
             <ul class="benef-list">
@@ -152,7 +143,7 @@
           <div class="card">
             <div style="display:flex;align-items:center;justify-content:space-between">
               <div>
-                <div style="font-size:12px;color:#e9d5ff;text-transform:uppercase">Pacote Completo</div>
+                <div style="font-size:12px;color:#ddd6fe;text-transform:uppercase">Pacote Completo</div>
                 <div class="old-price">De R$ 97,00</div>
                 <h3 class="price">Por R$ 29,90</h3>
                 <div class="price-sub">Pagamento único — desbloqueio para todos os jogos.</div>
@@ -172,7 +163,7 @@
               </ul>
             </div>
 
-            <div style="font-size:12px;color:#ddd6fe;margin-top:10px">Garantia de satisfação: devolução em 7 dias se não estiver satisfeito.</div>
+            <div style="font-size:12px;color:#e9d5ff;margin-top:10px">Garantia de satisfação: devolução em 7 dias se não estiver satisfeito.</div>
           </div>
         </aside>
       </div>
@@ -181,14 +172,6 @@
         <a id="comprar" href="https://pay.compraasegura.xyz/a9ArZMlKQN837xj" class="cta">Quero o Pacote Completo</a>
         <a href="https://wa.me/5511959930087?text=Ola%2C%20quero%20adiquerir%20o%20plano%20completo%20da%20IA." class="ghost">Tenho uma dúvida — falar com suporte</a>
       </div>
-
-      <!-- Depoimentos -->
-      <section style="margin-top:30px">
-        <h3 style="margin-bottom:12px">Depoimentos de clientes</h3>
-        <div id="depoimento">
-          <strong id="nome">Carlos M.</strong> — <span id="comentario">Aplicativo muito bom, fácil de usar e bem completo.</span>
-        </div>
-      </section>
 
     </main>
 
@@ -200,6 +183,7 @@
     </footer>
   </div>
 
+  <!-- Script depoimentos -->
   <script>
     const nomes = [
       "Carlos M.", "Fernanda S.", "João P.", "Mariana L.", 
