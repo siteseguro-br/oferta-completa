@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Upsell — LotoSorte: Pacote Completo</title>
-  <meta name="description" content="Amplie suas chances: LotoSorte para Mega-Sena, Quina, Lotomania e Dupla Sena. Oferta exclusiva para clientes Lotofácil." />
+  <meta name="description" content="Amplie suas chances com a IA LotoSorte para Mega-Sena, Quina, Lotomania e Dupla Sena. Oferta exclusiva para clientes Lotofácil." />
   <style>
     :root{ --bg:#0f1724; --card:#0b1220; --accent:#ffb86b; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03); --highlight:#1e293b; }
     *{box-sizing:border-box}
@@ -24,18 +24,32 @@
     .hero-sub{color:var(--muted);margin:0 0 18px}
 
     .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
-    .feat{background:var(--highlight);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 4px 12px rgba(0,0,0,0.4);transition:transform .2s, box-shadow .2s}
+    .feat{padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);box-shadow:0 4px 12px rgba(0,0,0,0.4);transition:transform .2s, box-shadow .2s}
     .feat:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 10px 24px rgba(0,0,0,0.6)}
-    .feat b{display:block;font-size:18px;margin-bottom:6px;color:var(--accent)}
-    .feat span{color:var(--muted)}
+    .feat b{display:block;font-size:18px;margin-bottom:6px}
+    .feat span{font-size:14px}
+
+    /* Blocos coloridos */
+    .feat.mega {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+    .feat.quina {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+    }
+    .feat.lotomania {
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      color:#1e293b;
+    }
+    .feat.dupla {
+      background: linear-gradient(135deg, #db2777, #ec4899);
+    }
 
     .bonus{margin-top:20px;padding:16px;border-radius:12px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.5);transition:transform .2s, box-shadow .2s}
     .bonus:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 12px 28px rgba(0,0,0,0.6)}
     .bonus h3{margin:0 0 8px;font-size:20px}
     .bonus p{margin:0;font-size:16px}
 
-    .price-box{position:sticky;top:24px}
-    /* BLOCO DE PREÇO EM ROXO */
+    /* Bloco de preço destacado em roxo */
     .price-box .card {
       padding: 18px;
       border-radius: 14px;
@@ -43,13 +57,10 @@
       color: #fff;
       box-shadow: 0 6px 24px rgba(109, 40, 217, 0.6);
     }
-    .price-box .card .old-price {
-      color: #e9d5ff;
-    }
-    .price-box .card .price-sub {
-      color: #ddd6fe;
-    }
+    .price-box .card .old-price {color: #e9d5ff;}
+    .price-box .card .price-sub {color: #ddd6fe;}
 
+    .price-box{position:sticky;top:24px}
     .price{font-size:28px;margin:0}
     .old-price{text-decoration:line-through;font-size:16px;margin-bottom:4px}
     .cta{display:inline-block;margin-top:16px;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#ff7a7a);color:#081226;font-weight:700;text-decoration:none;transition:transform .2s, box-shadow .2s}
@@ -94,10 +105,10 @@
           <p class="hero-sub">Você já conhece a eficácia do <strong>LotoSorte — 14 Pontos com IA</strong>. Agora imagine essa inteligência trabalhando para cada um dos jogos mais rentáveis da Caixa — com sugestões, filtros e estratégias adaptadas a cada perfil de concurso.</p>
 
           <div class="features">
-            <div class="feat"><b>Mega-Sena</b><span> Combinações otimizadas para prêmio milionário.</span></div>
-            <div class="feat"><b>Quina</b><span> Dicas para aumentar acertos nos concursos diários.</span></div>
-            <div class="feat"><b>Lotomania</b><span> Estratégias para aproveitar grandes volumes de números.</span></div>
-            <div class="feat"><b>Dupla Sena</b><span> Otimização para dois sorteios em um só bilhete.</span></div>
+            <div class="feat mega"><b>Mega-Sena</b><span> Combinações otimizadas para prêmio milionário.</span></div>
+            <div class="feat quina"><b>Quina</b><span> Dicas para aumentar acertos nos concursos diários.</span></div>
+            <div class="feat lotomania"><b>Lotomania</b><span> Estratégias para aproveitar grandes volumes de números.</span></div>
+            <div class="feat dupla"><b>Dupla Sena</b><span> Otimização para dois sorteios em um só bilhete.</span></div>
           </div>
 
           <div class="bonus">
@@ -139,7 +150,7 @@
           <div class="card">
             <div style="display:flex;align-items:center;justify-content:space-between">
               <div>
-                <div style="font-size:12px;color:#ddd6fe;text-transform:uppercase">Pacote Completo</div>
+                <div style="font-size:12px;color:#e9d5ff;text-transform:uppercase">Pacote Completo</div>
                 <div class="old-price">De R$ 97,00</div>
                 <h3 class="price">Por R$ 29,90</h3>
                 <div class="price-sub">Pagamento único — desbloqueio para todos os jogos.</div>
